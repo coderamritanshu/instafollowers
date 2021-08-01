@@ -479,7 +479,30 @@ hr{
     .footer-img{
         top: 25%;
     }
-} 
+}
+.txt {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 30px;
+    -webkit-animation-name: ColChange;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+
+
+@keyframes ColChange {
+    0% {color: gold; -webkit-transform: rotateY(0deg);}
+    20% {color: skyblue; }
+    40% {color: red; }
+    60% {color: lightgreen; }
+    80% {color: salmon;}
+    100% {color: gold; -webkit-transform: rotateY(360deg); }
+}
 
 </style>
 </head>
@@ -487,7 +510,9 @@ hr{
     <section id="banner">
         <img src="images/logo.PNG" class="logo">
         <div class="banner-text">
+            <div class="txt">
             <h1>Follower Service</h1>
+            </div>
             <br/><br/><br/><br/><br/><br/>
             <ul>
             <li>We provide you followers in Instagram platform.</li>
